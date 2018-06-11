@@ -1,3 +1,4 @@
+/* Body */
 body {
   background-image: url(./bg.JPG);
   overflow-x: hidden;
@@ -15,9 +16,13 @@ body {
   text-align: center;
   width: 97%;
 }
+
+/* Utility */
 .not-a-list {
   list-style-type: none;
 }
+
+/* Navigation */
 nav > ul {
   display: flex;
 }
@@ -40,11 +45,29 @@ nav > ul {
   width: 150%;
 }
 .navigation__menu__nav--general > li:hover {
-  background-color: rgb(30, 120, 30);
+  background-color: #09af00;
 }
 .navigation__menu:hover .navigation__menu__nav--general {
   display: block;
 }
+.nav--special {
+  padding: 2rem;
+  background-color: gray;
+  border-radius: 15px;
+}
+.nav--special > li {
+  padding: 1rem;
+}
+.nav--special > li:hover {
+  background-color: forestgreen;
+  border-radius: 15px;
+}
+.current {
+  background-color: rgb(20, 110, 20);
+  border-radius: 15px;
+}
+
+/* Footer */
 footer > a {
   padding: 0.5rem;
   margin-left: 1rem;
@@ -54,16 +77,16 @@ footer {
   display: flex;
   position: flex-end;
 }
+
+/* Typography */
 .info {
   padding: 1rem;
   margin-bottom: 2rem;
   text-decoration: underline;
   text-align: center;
 }
-.current {
-  background-color: rgb(20, 110, 20);
-  border-radius: 15px;
-}
+
+/* Content */
 .segment {
   background: white;
   border-radius: 15px;
@@ -78,16 +101,24 @@ footer {
 .segment:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
+.segment--kauf {
+  width: 20%;
+}
+.segment--img {
+  width: 60%;
+  border-radius: 15px;
+  margin: 1rem;
+  box-shadow: 2px 2px 2px 2px;
+  display: flex;
+}
 .container {
   width: 47%;
-}
-.kauf {
-  width: 20%;
 }
 .container--second {
   float: right;
 }
+
+/* Tables */
 table {
   width: 100%;
 }
@@ -121,7 +152,9 @@ dd {
   margin: 1rem;
   font-style: oblique;
 }
-.contactlist {
+
+/* Lists */
+.list--contacts {
   width: 30%;
   margin-left: auto;
   margin-right: auto;
@@ -132,26 +165,21 @@ dd {
   display: flex;
   flex-direction: column;
 }
-.imageInBox {
+.img--in-box {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
   border: 1px solid black;
 }
-.imagesegment {
-  width: 60%;
-  border-radius: 15px;
-  margin: 1rem;
-  box-shadow: 2px 2px 2px 2px;
-  display: flex;
-}
-.imageContext {
+.img--context {
   width: 47%;
   border-radius: 15px;
   margin: 1rem;
   border: 1px solid black;
 }
+
+/* Grid */
 .row {
   display: flex;
   flex-direction: row;
@@ -174,35 +202,23 @@ dd {
   margin-left: auto;
   margin-right: auto;
 }
-.social {
-  background-color: white;
-  border-radius: 15px;
-}
-.specialnav {
-  padding: 2rem;
-  background-color: gray;
-  border-radius: 15px;
-}
-.specialnav > li {
-  padding: 1rem;
-}
-.specialnav > li:hover {
-  background-color: forestgreen;
-  border-radius: 15px;
-}
+
+/* Links and Images */
 a {
   text-decoration: none;
   color: white;
 }
-.imageXXX {
+.img--xxx {
   width: 50%;
   box-align: center;
 }
+
+/* Responsive Desktop */
 @media screen and (max-width: 1100px) {
   .container {
     width: 100%;
   }
-  .disappear {
+  .gone {
     display: none;
   }
   .row {
@@ -213,13 +229,13 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  .keeprow {
+  .row--keep {
     flex-direction: row;
   }
-  .contactlist {
+  .list--contacts {
     width: 50%;
   }
-  .imagesegment {
+  .segment--img {
     width: 100%;
   }
   .container--second {
@@ -228,32 +244,30 @@ a {
   .segment {
     width: 90%;
   }
-  .shopContent {
-    flex-direction: column;
-  }
-  .shopBody {
+  .shop__body {
     display: flex;
     flex-direction: row;
   }
 }
+
+/* Responsive Tables */
 @media screen and (max-width: 700px) {
   .segment {
     width: 90%;
   }
-  .disappearsmall {
+  .gone--small {
     display: none;
-  }
-  .shopContent {
-    flex-direction: column;
   }
   .logo {
     width: 70%;
   }
-  .shopBody {
+  .shop__body {
     display: flex;
     flex-direction: column;
   }
 }
+
+/* Responsive Phablet */
 @media screen and (max-width: 550px) {
   .navigation {
     flex-direction: column;
@@ -263,6 +277,8 @@ a {
     text-align: center;
   }
 }
+
+/* Responsive Phone */
 @media screen and (max-width: 420px) {
   footer {
     flex-direction: column;
