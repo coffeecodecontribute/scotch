@@ -1,7 +1,7 @@
 {
-  "name": "eluseum-scottland",
+  "name": "eluseum-scotch",
   "version": "0.0.1-alpha",
-  "description": "A website about Scottland",
+  "description": "A website about Scotland",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,17 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/eluseum/scottland.git"
+    "url": "git+ssh://git@gitlab.com/eluseum/scotch.git"
   },
   "keywords": [
-    "scottland"
+    "scotch",
+    "scotland"
   ],
   "author": "Felicitas Pojtinger <felicitas@pojtinger.com>",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://gitlab.com/eluseum/scottland/issues"
+    "url": "https://gitlab.com/eluseum/scotch/issues"
   },
-  "index": "https://gitlab.com/eluseum/scottland#README",
+  "index": "https://gitlab.com/eluseum/scotch#README",
   "dependencies": {
     "http-server": "^0.11.1"
   },
