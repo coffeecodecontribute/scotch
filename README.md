@@ -1,4 +1,4 @@
-# Eluseum Scottland
+# Eluseum Scotch
 
 A website about Scottland.
 
